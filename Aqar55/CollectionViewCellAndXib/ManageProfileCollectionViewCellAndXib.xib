@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ManageProfileCollectionViewCellAndXib" id="gTV-IL-0wX" customClass="ManageProfileCollectionViewCellAndXib" customModule="Aqar55" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7N3-O8-8ew">
+                        <rect key="frame" x="5" y="10" width="146" height="98"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building_image" translatesAutoresizingMaskIntoConstraints="NO" id="ayb-Db-axj">
+                                <rect key="frame" x="0.0" y="0.0" width="146" height="98"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsP-MD-iJ8">
+                                <rect key="frame" x="126" y="-10" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mM1-az-DEA"/>
+                                    <constraint firstAttribute="width" constant="30" id="shx-Wm-ea5"/>
+                                </constraints>
+                                <state key="normal" image="closebutton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ayb-Db-axj" firstAttribute="top" secondItem="7N3-O8-8ew" secondAttribute="top" id="0ye-MN-xJa"/>
+                            <constraint firstAttribute="bottom" secondItem="ayb-Db-axj" secondAttribute="bottom" id="aQn-TY-hJn"/>
+                            <constraint firstAttribute="trailing" secondItem="zsP-MD-iJ8" secondAttribute="trailing" constant="-10" id="fHd-L7-MVg"/>
+                            <constraint firstItem="ayb-Db-axj" firstAttribute="leading" secondItem="7N3-O8-8ew" secondAttribute="leading" id="ob1-6s-QZx"/>
+                            <constraint firstAttribute="trailing" secondItem="ayb-Db-axj" secondAttribute="trailing" id="qUd-m4-iz6"/>
+                            <constraint firstItem="zsP-MD-iJ8" firstAttribute="top" secondItem="7N3-O8-8ew" secondAttribute="top" constant="-10" id="vHS-l6-tdG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7N3-O8-8ew" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="V46-PJ-260"/>
+                <constraint firstAttribute="bottom" secondItem="7N3-O8-8ew" secondAttribute="bottom" constant="10" id="dkl-B3-pir"/>
+                <constraint firstAttribute="trailing" secondItem="7N3-O8-8ew" secondAttribute="trailing" constant="5" id="ntb-4H-Jdm"/>
+                <constraint firstItem="7N3-O8-8ew" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="w33-Ae-HWh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="270" height="171"/>
+            <connections>
+                <outlet property="btnDeleteRef" destination="zsP-MD-iJ8" id="0P5-HC-rqb"/>
+                <outlet property="property_img" destination="ayb-Db-axj" id="OBV-DE-5Rh"/>
+            </connections>
+            <point key="canvasLocation" x="180.80000000000001" y="181.70914542728636"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="building_image" width="360" height="178"/>
+        <image name="closebutton" width="19" height="19"/>
+    </resources>
+</document>

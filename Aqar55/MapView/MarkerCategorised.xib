@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkerCategorised" customModule="Aqar55" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13H-ID-F1v">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20M Day" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7r-ln-DV8">
+                    <rect key="frame" x="5" y="5" width="70" height="70"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="13H-ID-F1v" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CHT-aB-Jsn"/>
+                <constraint firstItem="13H-ID-F1v" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="I1f-gv-rpO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j7r-ln-DV8" secondAttribute="bottom" constant="5" id="V5z-UE-Vgw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="j7r-ln-DV8" secondAttribute="trailing" constant="5" id="fcx-0D-cKi"/>
+                <constraint firstItem="13H-ID-F1v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gMq-Te-iuk"/>
+                <constraint firstItem="j7r-ln-DV8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="hWL-NQ-WC4"/>
+                <constraint firstItem="j7r-ln-DV8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="s3x-AL-9Hf"/>
+                <constraint firstItem="13H-ID-F1v" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="uP3-GD-flS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgViewMarker" destination="13H-ID-F1v" id="PcE-JJ-v6m"/>
+                <outlet property="lblContent" destination="j7r-ln-DV8" id="Xc1-M9-GlQ"/>
+            </connections>
+        </view>
+    </objects>
+</document>

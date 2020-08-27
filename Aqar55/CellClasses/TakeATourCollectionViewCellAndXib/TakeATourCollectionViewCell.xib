@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TakeATourCollectionViewCell" id="gTV-IL-0wX" customClass="TakeATourCollectionViewCell" customModule="Aqar55" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="591"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="591"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aqar_icon_new" translatesAutoresizingMaskIntoConstraints="NO" id="1QN-gi-svw">
+                        <rect key="frame" x="80.5" y="70" width="113" height="128"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL3-TV-Nvm">
+                        <rect key="frame" x="78" y="228" width="118.5" height="26.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                        <color key="textColor" white="0.16" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="XrV-59-I27">
+                        <rect key="frame" x="5" y="269.5" width="264" height="316.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                        <color key="textColor" white="0.16" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XrV-59-I27" secondAttribute="trailing" constant="5" id="4q8-WI-588"/>
+                <constraint firstItem="XrV-59-I27" firstAttribute="top" secondItem="bL3-TV-Nvm" secondAttribute="bottom" constant="15" id="7JM-Ag-Diu"/>
+                <constraint firstItem="bL3-TV-Nvm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="99W-3x-swN"/>
+                <constraint firstAttribute="bottom" secondItem="XrV-59-I27" secondAttribute="bottom" constant="5" id="BCx-qa-VB4"/>
+                <constraint firstItem="XrV-59-I27" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="FcY-cD-hy3"/>
+                <constraint firstItem="1QN-gi-svw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZTb-mY-R8u"/>
+                <constraint firstItem="1QN-gi-svw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="70" id="dCh-7u-GIQ"/>
+                <constraint firstItem="bL3-TV-Nvm" firstAttribute="top" secondItem="1QN-gi-svw" secondAttribute="bottom" constant="30" id="nAC-Qy-lcv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="274" height="591"/>
+            <connections>
+                <outlet property="contentTxtView" destination="XrV-59-I27" id="Kr0-Dg-qgj"/>
+                <outlet property="lblHeading" destination="bL3-TV-Nvm" id="amQ-Bc-P3H"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="185.75712143928038"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="aqar_icon_new" width="113" height="128"/>
+    </resources>
+</document>
